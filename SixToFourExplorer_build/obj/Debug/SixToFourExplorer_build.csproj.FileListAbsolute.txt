@@ -1,0 +1,8 @@
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Debug\SixToFourExplorer_build.mainForm.resources
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Debug\SixToFourExplorer_build.csproj.GenerateResource.Cache
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\bin\Debug\SixToFourExplorer.exe.config
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\bin\Debug\SixToFourExplorer.exe
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\bin\Debug\SixToFourExplorer.pdb
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Debug\SixToFourExplorer.Properties.Resources.resources
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Debug\SixToFourExplorer.exe
+D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Debug\SixToFourExplorer.pdb
