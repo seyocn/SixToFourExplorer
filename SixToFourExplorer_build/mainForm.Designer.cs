@@ -46,17 +46,18 @@
             this.labelInputWebAddr.AutoSize = true;
             this.labelInputWebAddr.Location = new System.Drawing.Point(29, 20);
             this.labelInputWebAddr.Name = "labelInputWebAddr";
-            this.labelInputWebAddr.Size = new System.Drawing.Size(65, 12);
+            this.labelInputWebAddr.Size = new System.Drawing.Size(107, 12);
             this.labelInputWebAddr.TabIndex = 0;
-            this.labelInputWebAddr.Text = "输入网址：";
+            this.labelInputWebAddr.Text = "输入网址：http://";
             // 
             // comboBoxWebAddr
             // 
             this.comboBoxWebAddr.FormattingEnabled = true;
-            this.comboBoxWebAddr.Location = new System.Drawing.Point(100, 17);
+            this.comboBoxWebAddr.Location = new System.Drawing.Point(135, 17);
             this.comboBoxWebAddr.Name = "comboBoxWebAddr";
-            this.comboBoxWebAddr.Size = new System.Drawing.Size(608, 20);
+            this.comboBoxWebAddr.Size = new System.Drawing.Size(573, 20);
             this.comboBoxWebAddr.TabIndex = 1;
+            this.comboBoxWebAddr.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxWebAddr_KeyDown);
             // 
             // buttonVisit
             // 
@@ -91,11 +92,11 @@
             // labelWebAddrNotice
             // 
             this.labelWebAddrNotice.AutoSize = true;
-            this.labelWebAddrNotice.Location = new System.Drawing.Point(44, 41);
+            this.labelWebAddrNotice.Location = new System.Drawing.Point(12, 40);
             this.labelWebAddrNotice.Name = "labelWebAddrNotice";
-            this.labelWebAddrNotice.Size = new System.Drawing.Size(719, 12);
+            this.labelWebAddrNotice.Size = new System.Drawing.Size(791, 12);
             this.labelWebAddrNotice.TabIndex = 5;
-            this.labelWebAddrNotice.Text = "(暂时不支持https/SSL协议，浏览视频网站时可能无法播放视频)(IPv4地址请输入首页，暂不支持直接访问子页面，但是支持二级域名)";
+            this.labelWebAddrNotice.Text = "(暂时不支持https/SSL协议，浏览视频网站时可能无法播放视频)(凡是通过此软件打开的网站，再未被其他软件重定向的情况下均不计入校园网流量)";
             // 
             // buttonIPv6TVneu
             // 

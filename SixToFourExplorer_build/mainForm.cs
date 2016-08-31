@@ -19,12 +19,13 @@ namespace SixToFourExplorer_build
             InitializeComponent();
         }
 
-        private string version = "1.0.0 Beta Aug 30 2016";
+        private string version = "1.1.5 Beta Aug 31 2016";
         private string TempDirPath = Environment.GetEnvironmentVariable("TEMP") + @"\SeyoWork\6to4Explorer\";
         private string LogFilePath = Environment.GetEnvironmentVariable("TEMP") + @"\SeyoWork\6to4Explorer\log.dat";
 
         private void loadLog()
         {
+            comboBoxWebAddr.Items.Add("清除访问记录");
             if (!Directory.Exists(TempDirPath))
             {
                 Directory.CreateDirectory(TempDirPath);
@@ -108,8 +109,34 @@ namespace SixToFourExplorer_build
 
         private void buttonVisit_Click(object sender, EventArgs e)
         {
+            if(comboBoxWebAddr.Text=="清除访问记录")
+            {
+                comboBoxWebAddr.Items.Clear();
+                comboBoxWebAddr.Text = null;
+                comboBoxWebAddr.Items.Add("清除访问记录");
+                FileStream LogFileCreate = new FileStream(LogFilePath, FileMode.Create, FileAccess.Write);
+                LogFileCreate.Close();
+                return;
+            }
+
             string webAddrSrc = comboBoxWebAddr.Text;
-            string webAddr = webAddrSrc + ".sixxs.org";
+            string webAddr = null;
+            bool flag = false;
+            for(int i=0;i<webAddrSrc.Length;i++)
+            {
+                if(webAddrSrc[i]=='/')
+                {
+                    flag = true;
+                    string webAddrP1 = webAddrSrc.Substring(0, i);
+                    string webAddrP2 = webAddrSrc.Substring(i);
+                    webAddr = "http://" + webAddrP1 + ".sixxs.org" + webAddrP2;
+                    break;
+                }
+            }
+            if(flag==false)
+            {
+                webAddr = "http://" + webAddrSrc + ".sixxs.org";
+            }
             RunCMD("start " + webAddr);
 
             if(!comboBoxWebAddr.Items.Contains(webAddrSrc))
@@ -119,6 +146,14 @@ namespace SixToFourExplorer_build
                 StreamWriter LogFile = new StreamWriter(LogFilePath, true);
                 LogFile.WriteLine(webAddrSrc);
                 LogFile.Close();
+            }
+        }
+
+        private void comboBoxWebAddr_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter)
+            {
+                buttonVisit_Click(sender, e);
             }
         }
     }

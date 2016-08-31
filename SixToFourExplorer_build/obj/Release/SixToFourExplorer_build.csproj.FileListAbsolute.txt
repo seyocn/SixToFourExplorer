@@ -1,7 +1,6 @@
 D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\bin\Release\SixToFourExplorer.exe.config
 D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\bin\Release\SixToFourExplorer.exe
 D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\bin\Release\SixToFourExplorer.pdb
-D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Release\SixToFourExplorer_build.csprojResolveAssemblyReference.cache
 D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Release\SixToFourExplorer_build.mainForm.resources
 D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Release\SixToFourExplorer.Properties.Resources.resources
 D:\SeyoWork\6to4explorer\SixToFourExplorer_build\SixToFourExplorer_build\obj\Release\SixToFourExplorer_build.csproj.GenerateResource.Cache
