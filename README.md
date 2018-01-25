@@ -22,7 +22,7 @@
 
 思优工场
 
-Email: yangxuan_77@foxmail.com
+Email: yangxuancn@foxmail.com
 
 Copyright (C) SeyoWorks 2007 - 2016
 
